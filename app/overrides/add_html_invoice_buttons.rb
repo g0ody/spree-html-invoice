@@ -6,7 +6,7 @@ Deface::Override.new(:virtual_path => "spree/admin/shared/_order_tabs",
 
 Deface::Override.new(:virtual_path => "spree/orders/show",
                      :name => "add_html_invoice_buttons",
-                     :insert_bottom => "data-hook='links'",
+                     :insert_after => "[data-hook='links']",
                      :partial => "spree/orders/html_buttons",
                      :disabled => false)
 
