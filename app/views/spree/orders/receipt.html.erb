@@ -9,7 +9,7 @@
 <body onLoad="self.print()"> 
   <div class="receipt">
     <div id="header">
-      <%= render :partial => "spree/invoice/receipt_header" %>
+      <%= render :partial => "spree/print/receipt_header" %>
     </div>
     <div class="info">
       <%=I18n.l(@order.completed_at.to_date) if @order.completed_at %>&nbsp;/&nbsp;
@@ -17,16 +17,16 @@
     </div>
     <div class="wrapper">
       <div class="line_items">
-        <%= render :partial => "spree/invoice/line_items_invoice" %>
+        <%= render :partial => "spree/print/line_items_invoice" %>
       </div>
       <div class="spacer"> &nbsp;
       </div>
       <div class="totals">
-        <%= render :partial => "spree/invoice/totals_receipt" %>
+        <%= render :partial => "spree/print/totals_receipt" %>
       </div>
     </div>
     <div class="footer">
-      <%= render :partial => "spree/invoice/receipt_footer" %>
+      <%= render :partial => "spree/print/receipt_footer" %>
     </div>
   </div>
 </body>

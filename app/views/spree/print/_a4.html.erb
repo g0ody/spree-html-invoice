@@ -9,26 +9,26 @@
 <body>
   <div class="a4">
     <div id="header">
-      <%= render :partial => "header" %>
+      <%= render :partial => "spree/print/header" %>
     </div>
     <div class="address">
-      <%= render :partial => "address" %>
+      <%= render :partial => "spree/print/address" %>
     </div>
     <div class="wrapper">
       <div class="line_items">
-        <%= render :partial => "line_items_#{params[:template]}" %>
+        <%= render :partial => "spree/print/line_items_#{params[:template]}" %>
       </div>
       <div class="thanks">
-        <%= render :partial => "thanks" %>
+        <%= render :partial => "spree/print/thanks" %>
       </div>
       <div class="spacer"> &nbsp;
       </div>
       <div class="totals">
-        <%= render :partial => "totals_#{params[:template]}" %>
+        <%= render :partial => "spree/print/totals_#{params[:template]}" %>
       </div>
     </div>
     <div class="footer">
-      <%= render :partial => "footer" %>
+      <%= render :partial => "spree/print/footer" %>
     </div>
   </div>
 </body>
